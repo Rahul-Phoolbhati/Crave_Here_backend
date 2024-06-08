@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "concurrently \"nodemon\" \"pnpm run stripe\"",
     "stripe": "stripe listen --forward-to localhost:7000/api/order/checkout/webhook",
-    "build": "npm install && npx tsc",
-    "start": "node dist/index.js"
+    "build": "pnpm install && npx tsc",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
